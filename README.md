@@ -9,6 +9,7 @@ Este projeto de Análise de Dados foi desenvolvido aplicando na prática os conc
 ## 🎯 O que aprendi com o Grupo Hashtag Treinamentos
 
 Neste projeto, apliquei as metodologias ensinadas pela Hashtag para:
+
 - **Tratamento e Limpeza de Dados:** Eliminação de colunas irrelevantes e remoção de valores ausentes (`dropna()`) utilizando a biblioteca `pandas`.
 - **Análise Exploratória:** Diagnóstico do percentual de cancelamento da base com `value_counts(normalize=True)`.
 - **Data Visualization Interativa:** Criação de gráficos e histogramas com `plotly.express` para identificar visualmente padrões de comportamento.
@@ -41,13 +42,63 @@ A análise revelou 3 grandes gargalos responsáveis pela maioria dos cancelament
 
 ## 📂 Estrutura de Arquivos
 
-- `Projeto.ipynb`: Notebook Jupyter contendo todo o código, análises e simulações do projeto.
-- `cancelamentos.csv`: Base de dados contendo o histórico e informações dos clientes.
+```
+Analisando-Dados-com-Python/
+├── Projeto.ipynb        # Notebook com todo o código, análises e simulações
+├── cancelamentos.csv    # Base de dados com o histórico dos clientes
+└── README.md
+```
+
+> ⚠️ O arquivo `cancelamentos.csv` precisa estar na **mesma pasta** do `Projeto.ipynb` para que os comandos de leitura de dados (`pd.read_csv(...)`) funcionem corretamente.
 
 ---
 
 ## 🚀 Como Executar o Projeto
 
-1. **Instale as bibliotecas necessárias:**
-   ```bash
-   pip install pandas plotly openpyxl nbformat
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/DCapulot/Analisando-Dados-com-Python.git
+```
+
+### 2. Entre na pasta do projeto
+
+```bash
+cd Analisando-Dados-com-Python
+```
+
+### 3. Instale as bibliotecas necessárias
+
+```bash
+pip install pandas plotly openpyxl nbformat notebook
+```
+
+### 4. Abra o notebook
+
+Você pode abrir o `Projeto.ipynb` de duas formas:
+
+**Opção A — Jupyter Notebook:**
+```bash
+jupyter notebook Projeto.ipynb
+```
+
+**Opção B — VS Code:**
+Abra a pasta no VS Code, instale a extensão "Jupyter" (se ainda não tiver) e abra o arquivo `Projeto.ipynb`.
+
+### 5. Execute as células
+
+Rode as células do notebook **em ordem**, de cima para baixo, para reproduzir todo o tratamento de dados, os gráficos e as simulações.
+
+---
+
+## 📚 Fonte / Créditos
+
+Este projeto foi desenvolvido com base nos ensinamentos do **[Grupo Hashtag Treinamentos](https://www.hashtagtreinamentos.com/)**, referência em cursos de Python, Excel e Análise de Dados no Brasil.
+
+---
+
+## 👤 Autor
+
+**David Capulot Corrêa**
+
+Projeto desenvolvido para fins de estudo e prática de Análise de Dados com Python.
